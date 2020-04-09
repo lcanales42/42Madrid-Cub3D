@@ -6,7 +6,7 @@
 /*   By: lorenzo.canales.sanchezgmail.com <loren    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 18:10:13 by lcanales          #+#    #+#             */
-/*   Updated: 2020/04/06 10:02:59 by lorenzo.can      ###   ########.fr       */
+/*   Updated: 2020/04/09 10:01:53 by lcanales         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -125,6 +125,6 @@ int main(void)
 }
 /*	Para compilar con la libreria minilibx local:
 	gcc -I /usr/local/include/ ejemplo.c -L /usr/local/lib/ -lmlx -framework OpenGl -framework AppKit
-	c -Wall -Wextra -Werror -I /usr/local/lib -lmlx -framework OpenGL -framework AppKit main.c
+	gcc -Wall -Wextra -Werror -I /usr/local/lib -lmlx -framework OpenGL -framework AppKit main.c
 	Para compilar com la libreria minilibx descargada, popnerla en a carpeta donde tengas los archivos hacer make y despues:
 	gcc ejemplo.c -framework OpenGl -framework AppKit minilibx(es nombre de la carpeta de la libreria)/limlx.a(el make de la libreria) */
