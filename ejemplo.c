@@ -6,7 +6,7 @@
 /*   By: lorenzo.canales.sanchezgmail.com <loren    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 18:10:13 by lcanales          #+#    #+#             */
-/*   Updated: 2020/04/09 10:01:53 by lcanales         ###   ########.fr       */
+/*   Updated: 2020/04/09 11:38:02 by lorenzo.can      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,14 +33,16 @@ int main(void)
 	//void *wind;
 	int i;
 	int j;
+	//void *soldier;
 
 	i = 0;
-	
+	//soldier = soldier.xpm;
 	mlx = mlx_init();
 	window = mlx_new_window(mlx, 800, 600, "Mi ventana");
 	//mlx_key_hook(mlx, 'a', )
+	mlx_put_image_to_window(mlx, window, soldier.xpm, 32, 30);
 	//wind = mlx_xpm_file_to_image(mlx, "soldier.xpm", 40, 40);
-	//wind = mlx_new_window(mlx, 400, 300, "otra");
+	//wind = mlx_new_imagen(mlx, 400, 300);
 	while(i <= 100)
 	{
 		j = 0;
@@ -66,7 +68,7 @@ int main(void)
 		j = 0;
 		while(j<=600)
 		{
-			mlx_pixel_put(mlx, window, i, j, 0xabcdef);
+			mlx_pixel_put(mlx, window, i, j, 125|012|122|255);
 			j++;
 		}
 		i++;
