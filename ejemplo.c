@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ejemplo.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lorenzo.canales.sanchezgmail.com <loren    +#+  +:+       +#+        */
+/*   By: lcanales <lcanales@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 18:10:13 by lcanales          #+#    #+#             */
-/*   Updated: 2020/04/09 11:38:02 by lorenzo.can      ###   ########.fr       */
+/*   Updated: 2020/11/09 23:07:36 by lcanales         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -129,4 +129,6 @@ int main(void)
 	gcc -I /usr/local/include/ ejemplo.c -L /usr/local/lib/ -lmlx -framework OpenGl -framework AppKit
 	gcc -Wall -Wextra -Werror -I /usr/local/lib -lmlx -framework OpenGL -framework AppKit main.c
 	Para compilar com la libreria minilibx descargada, popnerla en a carpeta donde tengas los archivos hacer make y despues:
-	gcc ejemplo.c -framework OpenGl -framework AppKit minilibx(es nombre de la carpeta de la libreria)/limlx.a(el make de la libreria) */
+	gcc ejemplo.c -framework OpenGl -framework AppKit minilibx(es nombre de la carpeta de la libreria)/limlx.a(el make de la libreria) 
+	gcc -I /usr/local/include/ -o ejemplo (com -o pones el nombre del ejecutable) ejemplo.c -L /usr/local/lib/ -lmlx -lXext -lX11 todo esto 
+	lo puedes sustutuir por gcc -o ejmplo ejemplo.c -lmlx -lXext -lX11 */
