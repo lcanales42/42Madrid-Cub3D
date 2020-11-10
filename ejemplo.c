@@ -6,7 +6,7 @@
 /*   By: lcanales <lcanales@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 18:10:13 by lcanales          #+#    #+#             */
-/*   Updated: 2020/11/09 23:07:36 by lcanales         ###   ########.fr       */
+/*   Updated: 2020/11/10 08:46:12 by lcanales         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -131,4 +131,5 @@ int main(void)
 	Para compilar com la libreria minilibx descargada, popnerla en a carpeta donde tengas los archivos hacer make y despues:
 	gcc ejemplo.c -framework OpenGl -framework AppKit minilibx(es nombre de la carpeta de la libreria)/limlx.a(el make de la libreria) 
 	gcc -I /usr/local/include/ -o ejemplo (com -o pones el nombre del ejecutable) ejemplo.c -L /usr/local/lib/ -lmlx -lXext -lX11 todo esto 
-	lo puedes sustutuir por gcc -o ejmplo ejemplo.c -lmlx -lXext -lX11 */
+	lo puedes sustutuir por gcc -o ejmplo ejemplo.c -lmlx -lXext -lX11 
+	seguimos de prueba*/
