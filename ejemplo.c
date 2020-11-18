@@ -6,7 +6,7 @@
 /*   By: lcanales <lcanales@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 18:10:13 by lcanales          #+#    #+#             */
-/*   Updated: 2020/11/10 08:46:12 by lcanales         ###   ########.fr       */
+/*   Updated: 2020/11/18 08:22:38 by lcanales         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,17 +30,17 @@ int main(void)
 {
 	void *mlx;
 	void *window;
-	//void *wind;
+	void *wind;
 	int i;
 	int j;
-	//void *soldier;
+	void *soldier;
 
 	i = 0;
 	//soldier = soldier.xpm;
 	mlx = mlx_init();
 	window = mlx_new_window(mlx, 800, 600, "Mi ventana");
 	//mlx_key_hook(mlx, 'a', )
-	mlx_put_image_to_window(mlx, window, soldier.xpm, 32, 30);
+	//mlx_put_image_to_window(mlx, window, soldier.xpm, 32, 30);
 	//wind = mlx_xpm_file_to_image(mlx, "soldier.xpm", 40, 40);
 	//wind = mlx_new_imagen(mlx, 400, 300);
 	while(i <= 100)
@@ -113,12 +113,24 @@ int main(void)
 		}
 		i++;
 	}
+	while(i <= 800)
+	{
+		j = 0;
+		while(j<=600)
+		{
+			mlx_pixel_put(mlx, window, i, j, 125|125|122|0);
+			j++;
+		}
+		i++;
+	}
 	//mlx_put_image_to_window(mlx, window, wind, 100, 100);
 	mlx_pixel_put(mlx, window, 210, 151, 0xFFFFFF);
 	mlx_pixel_put(mlx, window, 210, 152, 0xFFFFFF);
 	mlx_pixel_put(mlx, window, 210, 153, 0xFFFFFF);
 	mlx_pixel_put(mlx, window, 210, 154, 0xFFFFFF);
-	mlx_string_put(mlx, window, 210, 155, 0x12234fc, "hola que tal");
+	mlx_string_put(mlx, window, 400, 300, 0|0|0|0, "hola que tal");
+	wind = mlx_new_image(mlx, 400, 400);
+	mlx_put_image_to_window(mlx, wind, soldier, 600, 400);
 	//mlx_key_hook(window, deal_key, (void *)0);
 	//mlx_clear_window(mlx, window);
 	mlx_loop(mlx);
