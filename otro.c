@@ -6,7 +6,7 @@
 /*   By: lcanales <lcanales@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/09 23:18:57 by lcanales          #+#    #+#             */
-/*   Updated: 2020/11/10 19:39:33 by lcanales         ###   ########.fr       */
+/*   Updated: 2021/04/05 07:15:21 by lcanales         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,14 @@ int main(void)
 	mlx_pixel_put(mlx, window, 505, 500, 125|012|122|255);
 	mlx_pixel_put(mlx, window, 506, 500, 125|012|122|255);
 	mlx_pixel_put(mlx, window, 507, 500, 125|012|122|255);
+	mlx_pixel_put(mlx, window, 500, 501, 125|012|122|255);
+	mlx_pixel_put(mlx, window, 500, 502, 125|012|122|255);
+	mlx_pixel_put(mlx, window, 500, 503, 125|012|122|255);
+	mlx_pixel_put(mlx, window, 500, 504, 125|012|122|255);
+	mlx_pixel_put(mlx, window, 500, 505, 125|012|122|255);
+	mlx_pixel_put(mlx, window, 500, 506, 125|012|122|255);
+	mlx_pixel_put(mlx, window, 500, 507, 125|012|122|255);
+	mlx_pixel_put(mlx, window, 500, 508, 125|012|122|255);
 	mlx_string_put(mlx,window2, 250, 250, 125|012|122|255, "hola");	
 
 

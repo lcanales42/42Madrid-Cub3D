@@ -6,7 +6,7 @@
 /*   By: lcanales <lcanales@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 18:10:13 by lcanales          #+#    #+#             */
-/*   Updated: 2020/11/18 08:22:38 by lcanales         ###   ########.fr       */
+/*   Updated: 2020/11/25 14:08:07 by lcanales         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -130,7 +130,7 @@ int main(void)
 	mlx_pixel_put(mlx, window, 210, 154, 0xFFFFFF);
 	mlx_string_put(mlx, window, 400, 300, 0|0|0|0, "hola que tal");
 	wind = mlx_new_image(mlx, 400, 400);
-	mlx_put_image_to_window(mlx, wind, soldier, 600, 400);
+	//mlx_put_image_to_window(mlx, wind, soldier, 600, 400);
 	//mlx_key_hook(window, deal_key, (void *)0);
 	//mlx_clear_window(mlx, window);
 	mlx_loop(mlx);
